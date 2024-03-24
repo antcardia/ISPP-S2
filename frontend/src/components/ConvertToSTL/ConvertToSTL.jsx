@@ -55,7 +55,7 @@ const ConvertToSTL = () => {
             const formData = new FormData();
             formData.append('file', file);
 
-            let petition1 = import.meta.env.VITE_APP_BACKEND + '/conversion/api/v1/convert_to_stl';
+            let petition1 = 'https://shar3d-backend.onrender.com' + '/conversion/api/v1/convert_to_stl';
             petition1 = petition1.replace(/"/g, '');
 
             fetch(petition1, {
