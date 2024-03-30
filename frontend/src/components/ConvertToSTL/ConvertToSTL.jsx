@@ -54,7 +54,7 @@ const ConvertToSTL = () => {
         if (validateForm()) {
             const formData = new FormData();
             formData.append('file', file);
-
+            alert('Este proceso puede tardar entre 3 y 5 minutos');
             let petition1 = 'https://shar3d-backend.onrender.com' + '/conversion/api/v1/convert_to_stl';
             petition1 = petition1.replace(/"/g, '');
 
